@@ -1,7 +1,7 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
-  // Your web app's Firebase configuration
+  // web app's Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyDyCgQHt_JCa-sDKqwTFdU8fJFxWE5OBlc",
   authDomain: "the-dallars-e2195.firebaseapp.com",
