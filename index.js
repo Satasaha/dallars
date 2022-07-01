@@ -15,7 +15,7 @@ const firebaseConfig = {
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
-  // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG. Lol
+  // We're going to use oBjEcT OrIeNtEd PrOgRaMmInG.
   class The_Dallars{
     // Home() is used to create the home page
     home(){
@@ -290,7 +290,7 @@ const firebaseConfig = {
           })
         })
 
-        // Now we're done. Simply display the ordered messages
+        // Simply display the ordered messages
         ordered.forEach(function(data) {
           var name = data.name
           var message = data.message
