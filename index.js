@@ -258,8 +258,6 @@ const firebaseConfig = {
           return
         }
 
-        // OK! SO IF YOU'RE A ROOKIE CODER. THIS IS GOING TO BE
-        // SUPER EASY-ISH! I THINK. MAYBE NOT. WE'LL SEE!
 
         // convert the message object values to an array.
         var messages = Object.values(messages_object.val());
@@ -274,7 +272,6 @@ const firebaseConfig = {
           unordered.push([messages[i], messages[i].index]);
         }
 
-        // Now this is straight up from stack overflow 🤣
         // Sort the unordered messages by the guide
         guide.forEach(function(key) {
           var found = false
@@ -331,8 +328,6 @@ const firebaseConfig = {
   // So we've "built" our app. Let's make it work!!
   var app = new The_Dallars()
   // If we have a name stored in localStorage.
-  // Then use that name. Otherwise , if not.
-  // Go to home.
   if(app.get_name() != null){
     app.chat()
   }
