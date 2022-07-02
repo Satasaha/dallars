@@ -62,16 +62,15 @@ const firebaseConfig = {
       var join_button = document.createElement('button')
       join_button.setAttribute('id', 'join_button')
       join_button.innerHTML = 'Join <i class="fas fa-sign-in-alt"></i>'
-
       var join_input_container = document.createElement('div')
       join_input_container.setAttribute('id', 'join_input_container')
 
       var join_input = document.createElement('input')
       join_input.setAttribute('id', 'join_input')
-      join_input.setAttribute('maxlength', 15)
+      join_input.setAttribute('maxlength', 20)
       join_input.placeholder = 'Join with your.....Name'
       // Every time we type into the join_input
-      join_input.onkeyup  = function(){
+      join_input.onkeyup  = function(value=send){
         // If the input we have is longer that 0 letters
         if(join_input.value.length > 0){
           // Make the button light up
