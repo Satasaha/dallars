@@ -13,9 +13,6 @@ window.onload = function() {
     measurementId: "G-YM9LB2E21M"
   };
   // Initialize Firebase
-  const analytics = getAnalytics(app);
-  
-  // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
   var db = firebase.database()
