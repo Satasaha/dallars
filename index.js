@@ -1,16 +1,20 @@
 // We enclose this in window.onload.
 // So we don't have ridiculous errors.
 window.onload = function() {
-  // web app's Firebase configuration
-const firebaseConfig = {
-  apiKey: "AIzaSyDyCgQHt_JCa-sDKqwTFdU8fJFxWE5OBlc",
-  authDomain: "the-dallars-e2195.firebaseapp.com",
-  databaseURL: "https://the-dallars-e2195-default-rtdb.firebaseio.com",
-  projectId: "the-dallars-e2195",
-  storageBucket: "the-dallars-e2195.appspot.com",
-  messagingSenderId: "208782684380",
-  appId: "1:208782684380:web:bff778927bfaee6e1a4419"
-};
+// Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBRIiaQt5VWFjEnpNeiaxOf4osZV7f0SHU",
+    authDomain: "the-dallars-chat-web.firebaseapp.com",
+    projectId: "the-dallars-chat-web",
+    storageBucket: "the-dallars-chat-web.appspot.com",
+    messagingSenderId: "782806293711",
+    appId: "1:782806293711:web:ef5338471f5c3456616bba",
+    measurementId: "G-YM9LB2E21M"
+  };
+  // Initialize Firebase
+  const analytics = getAnalytics(app);
+  
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
   // This is very IMPORTANT!! We're going to use "db" a lot.
